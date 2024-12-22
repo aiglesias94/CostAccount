@@ -24,3 +24,7 @@ Several enhancements could be made in a real-life scenario:
 - **Auto Mapper**: Use an auto mapper for converting the model to DTOs.
 - **Caching**: Add caching for loading stocks and sales history.
 - **Error Handling**: Incorporate better error handling using custom errors and metrics.
+
+## Demo Video
+
+https://youtu.be/1ZQ_Awrnt2Y
