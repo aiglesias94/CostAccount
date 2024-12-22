@@ -57,7 +57,7 @@ namespace CostAccount_BAL.Services
             }
 
             int reaminingShares = _sharesLotRepository.GetTotalAmount();
-            decimal costBasisRemainingShares = _sharesLotRepository.GetTotalPrice() / reaminingShares;
+            decimal costBasisRemainingShares = reaminingShares > 0 ? _sharesLotRepository.GetTotalPrice() / reaminingShares : 0;
 
             Sale sale = new Sale(amount, totalPurchasePrice, amount * price, reaminingShares, costBasisRemainingShares);
             _saleRepository.Add(sale);
@@ -93,7 +93,7 @@ namespace CostAccount_BAL.Services
 
         public bool ValidPurchase(int amount, decimal price)
         {
-            return amount > 0 && _sharesLotRepository.GetTotalAmount() > amount;
+            return amount > 0 && price > 0 && _sharesLotRepository.GetTotalAmount() >= amount;
         }
 
         private SharesLot? GetNextLot()

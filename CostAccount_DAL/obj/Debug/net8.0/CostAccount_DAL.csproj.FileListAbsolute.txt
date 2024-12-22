@@ -9,3 +9,4 @@ D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostA
 D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\refint\CostAccount_DAL.dll
 D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.pdb
 D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\ref\CostAccount_DAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.sourcelink.json

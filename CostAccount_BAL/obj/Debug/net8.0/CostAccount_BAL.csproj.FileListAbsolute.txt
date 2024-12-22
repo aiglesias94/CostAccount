@@ -13,3 +13,4 @@ D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostA
 D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\refint\CostAccount_BAL.dll
 D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.pdb
 D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\ref\CostAccount_BAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.sourcelink.json

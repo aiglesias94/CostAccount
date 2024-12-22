@@ -38,3 +38,4 @@ D:\Computer Science\Interview\CostAccount\CostAccount\obj\Debug\net8.0\refint\Co
 D:\Computer Science\Interview\CostAccount\CostAccount\obj\Debug\net8.0\CostAccount.pdb
 D:\Computer Science\Interview\CostAccount\CostAccount\obj\Debug\net8.0\CostAccount.genruntimeconfig.cache
 D:\Computer Science\Interview\CostAccount\CostAccount\obj\Debug\net8.0\ref\CostAccount.dll
+D:\Computer Science\Interview\CostAccount\CostAccount\obj\Debug\net8.0\CostAccount.sourcelink.json

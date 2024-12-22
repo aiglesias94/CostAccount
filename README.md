@@ -10,7 +10,7 @@ This project is implemented using a three-layer architecture:
 
 ## Technology Stack
 
-- I created the project in .Net 8 which is a long-term support version and using razor pages for the presenter layer, since the assessment indicated that this would be used for evaluating C#.
+- I created the project in .Net 8 which is the latest long-term support version and using simple razor pages for the presenter layer, since the assessment indicated that this would be used for evaluating C#.
 - Implemented a dummy database using lists as indicated.
 
 ## Improvements for Real-Life Scenarios

@@ -11,7 +11,7 @@
         public decimal SalePrice { get; set; }
 
 
-        public decimal CostBasisSoldShares { get { return Price / Amount; } }
+        public decimal CostBasisSoldShares { get { return Amount > 0 ? Price / Amount : 0; } }
 
         public int RemainingShares { get; set; }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CostAccount_DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29adb8c4bd168b45084aca4da9f8c6662bf28e19")]
 [assembly: System.Reflection.AssemblyProductAttribute("CostAccount_DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CostAccount_DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

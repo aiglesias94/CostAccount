@@ -27,7 +27,8 @@ namespace CostAccount.Pages
         [Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than 0")]
         public decimal Price { get; set; }
 
-        public string? Message { get; private set; }
+        public string? SuccessMessage { get; private set; }
+        public string? ErrorMessage { get; private set; }
 
 
         public IndexModel(ILogger<IndexModel> logger, IMarketService marketService)
@@ -47,9 +48,29 @@ namespace CostAccount.Pages
         {
             if (!ModelState.IsValid)
             {
+                LoadModel();
                 return Page();
             }
-            _marketService.Sell(Amount, Price);
+
+            if (!_marketService.ValidPurchase(Amount, Price))
+            {
+                ErrorMessage = "Invalid Sale";
+                LoadModel();
+                return Page();
+            }
+
+            try
+            {
+                _marketService.Sell(Amount, Price);
+            }
+            catch (Exception ex)
+            {
+                string errorMessage = "Error selling stocks";
+                _logger.LogError(ex, errorMessage);
+                ErrorMessage = errorMessage;
+                LoadModel();
+                return Page();
+            }
 
             return RedirectToPage();
         }
@@ -58,7 +79,7 @@ namespace CostAccount.Pages
         {
             Amount = 0; Price = 0.0m;
             ModelState.Clear();
-            Message = "Purchases Reset";
+            SuccessMessage = "Purchases Reset";
             _marketService.ResetLots();
             LoadModel();
             return Page();
