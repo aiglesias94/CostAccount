@@ -6,7 +6,7 @@ This project is implemented using a three-layer architecture:
 
 - **CostAccount_BAL**: Business Access Layer, containing the services.
 - **CostAccount_DAL**: Data Access Layer, containing the models and repositories.
-- **CostAccount**: Launch project and Presentation layer.
+- **CostAccount**: Presentation layer and launch project
 
 ## Technology Stack
 
