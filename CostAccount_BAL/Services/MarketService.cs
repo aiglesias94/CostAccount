@@ -56,10 +56,10 @@ namespace CostAccount_BAL.Services
                 sharesLot = GetNextLot();
             }
 
-            int reaminingShares = _sharesLotRepository.GetTotalAmount();
-            decimal costBasisRemainingShares = reaminingShares > 0 ? _sharesLotRepository.GetTotalPrice() / reaminingShares : 0;
+            int remainingShares = _sharesLotRepository.GetTotalAmount();
+            decimal costBasisRemainingShares = remainingShares > 0 ? _sharesLotRepository.GetTotalPrice() / remainingShares : 0;
 
-            Sale sale = new Sale(amount, totalPurchasePrice, amount * price, reaminingShares, costBasisRemainingShares, month);
+            Sale sale = new Sale(amount, totalPurchasePrice, amount * price, remainingShares, costBasisRemainingShares, month);
             _saleRepository.Add(sale);
 
             SaleDTO saleDTO = SaleDTO.From(sale);

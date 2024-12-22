@@ -9,9 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton(new MemoryDB());
-builder.Services.AddSingleton<ISaleRepository, SaleRepository>();
-builder.Services.AddSingleton<ISharesLotRepository, SharesLotRepository>();
-builder.Services.AddSingleton<IMarketService, MarketService>();
+builder.Services.AddScoped<ISaleRepository, SaleRepository>();
+builder.Services.AddScoped<ISharesLotRepository, SharesLotRepository>();
+builder.Services.AddScoped<IMarketService, MarketService>();
 
 var app = builder.Build();
 
