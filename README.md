@@ -6,11 +6,11 @@ This project is implemented using a three-layer architecture:
 
 - **CostAccount_BAL**: Business Access Layer, containing the services.
 - **CostAccount_DAL**: Data Access Layer, containing the models and repositories.
-- **CostAccount**: Main project and the presenter layer.
+- **CostAccount**: Main project and the Presentation layer.
 
 ## Technology Stack
 
-- I created the project in .Net 8 which is the latest long-term support version and using simple razor pages for the presenter layer, since the assessment indicated that this would be used for evaluating C#.
+- I created the project in .Net 8 which is the latest long-term support version and using simple razor pages for the Presentation layer, since the assessment indicated that would be used for evaluating C#.
 - Implemented a dummy database using lists as indicated.
 
 ## Improvements for Real-Life Scenarios

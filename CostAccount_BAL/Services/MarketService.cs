@@ -29,7 +29,7 @@ namespace CostAccount_BAL.Services
         public SaleDTO Sell(int amount, decimal price)
         {
 
-            if (!ValidPurchase(amount, price)) throw new ArgumentException("Invalid amount");
+            if (!ValidPurchase(amount, price)) throw new ArgumentException("Invalid sell parameters");
 
             SharesLot? sharesLot = GetNextLot();
             int toSellAmount = amount;
