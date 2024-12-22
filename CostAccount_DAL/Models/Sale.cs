@@ -1,4 +1,6 @@
-﻿namespace CostAccount_DAL.Models
+﻿using CostAccount_DAL.Enums;
+
+namespace CostAccount_DAL.Models
 {
     public class Sale
     {
@@ -10,7 +12,6 @@
 
         public decimal SalePrice { get; set; }
 
-
         public decimal CostBasisSoldShares { get { return Amount > 0 ? Price / Amount : 0; } }
 
         public int RemainingShares { get; set; }
@@ -19,9 +20,11 @@
 
         public decimal TotalProfit { get { return SalePrice - Price; } }
 
+        public Month Month { get; set; }
+
         public DateTime Created { get; set; }
 
-        public Sale(int amount, decimal price, decimal salePrice, int remainingShares, decimal costBasisRemainingShares)
+        public Sale(int amount, decimal price, decimal salePrice, int remainingShares, decimal costBasisRemainingShares, Month month)
         {
             Id = Guid.NewGuid();
             Amount = amount;
@@ -30,6 +33,7 @@
             Created = DateTime.Now;
             RemainingShares = remainingShares;
             CostBasisRemainingShares = costBasisRemainingShares;
+            Month = month;
         }
     }
 }

@@ -1,5 +1,6 @@
 using CostAccount_BAL.Services.Interfaces;
 using CostAccount_DAL.DTOs;
+using CostAccount_DAL.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
@@ -54,25 +55,26 @@ namespace CostAccount.Pages
 
             if (!_marketService.ValidPurchase(Amount, Price))
             {
-                ErrorMessage = "Invalid Sale";
+                ErrorMessage = "Invalid sale parameters";
                 LoadModel();
                 return Page();
             }
 
             try
             {
-                _marketService.Sell(Amount, Price);
+                //April is used for all sells as is indicated
+                _marketService.Sell(Amount, Price, Month.April);
+                SuccessMessage = "Sold Successfully";
             }
             catch (Exception ex)
             {
                 string errorMessage = "Error selling stocks";
                 _logger.LogError(ex, errorMessage);
                 ErrorMessage = errorMessage;
-                LoadModel();
-                return Page();
             }
 
-            return RedirectToPage();
+            LoadModel();
+            return Page();
         }
 
         public IActionResult OnPostReset()

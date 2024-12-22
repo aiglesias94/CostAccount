@@ -1,4 +1,5 @@
-﻿using CostAccount_DAL.Models;
+﻿using CostAccount_DAL.Enums;
+using CostAccount_DAL.Models;
 using System.Security.Cryptography;
 
 namespace CostAccount_DAL.DTOs
@@ -21,6 +22,8 @@ namespace CostAccount_DAL.DTOs
 
         public decimal TotalProfit { get { return SalePrice - Price; } }
 
+        public Month Month { get; set; }
+
         public DateTime Created { get; set; }
 
         public static SaleDTO From(Sale sale)
@@ -33,6 +36,7 @@ namespace CostAccount_DAL.DTOs
                 SalePrice = sale.SalePrice,
                 RemainingShares = sale.RemainingShares,
                 CostBasisRemainingShares = sale.CostBasisRemainingShares,
+                Month=sale.Month,
                 Created = sale.Created,
             };
 
@@ -41,7 +45,7 @@ namespace CostAccount_DAL.DTOs
 
         public static Sale To(SaleDTO saleDto)
         {
-            Sale sale = new Sale(saleDto.Amount, saleDto.Price, saleDto.SalePrice, saleDto.RemainingShares, saleDto.CostBasisRemainingShares);
+            Sale sale = new Sale(saleDto.Amount, saleDto.Price, saleDto.SalePrice, saleDto.RemainingShares, saleDto.CostBasisRemainingShares,saleDto.Month);
             return sale;
         }
     }

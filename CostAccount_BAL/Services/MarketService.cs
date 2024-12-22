@@ -26,7 +26,7 @@ namespace CostAccount_BAL.Services
             return sharesLotDTO;
         }
 
-        public SaleDTO Sell(int amount, decimal price)
+        public SaleDTO Sell(int amount, decimal price, Month month)
         {
 
             if (!ValidPurchase(amount, price)) throw new ArgumentException("Invalid sell parameters");
@@ -59,7 +59,7 @@ namespace CostAccount_BAL.Services
             int reaminingShares = _sharesLotRepository.GetTotalAmount();
             decimal costBasisRemainingShares = reaminingShares > 0 ? _sharesLotRepository.GetTotalPrice() / reaminingShares : 0;
 
-            Sale sale = new Sale(amount, totalPurchasePrice, amount * price, reaminingShares, costBasisRemainingShares);
+            Sale sale = new Sale(amount, totalPurchasePrice, amount * price, reaminingShares, costBasisRemainingShares, month);
             _saleRepository.Add(sale);
 
             SaleDTO saleDTO = SaleDTO.From(sale);
