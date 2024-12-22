@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Cost Account";
+}
+
+
+
+@if (Model.Message != null)
+{
+    <div class="alert alert-success"> @Model.Message </div>
+}
+
+
+<div class="container">
+    <h1>New Sale</h1>
+
+    <form method="post" class="row g-3 align-items-center"> <div class="col-auto"> 
+        <label asp-for="Amount" class="form-label">Amount</label> 
+        <input asp-for="Amount" class="form-control" placeholder="Amount" /> 
+        <span asp-validation-for="Amount" class="text-danger"></span> </div> 
+        <div class="col-auto"> <label asp-for="Price" class="form-label">Price</label> 
+        <input asp-for="Price" class="form-control" placeholder="Price" /> 
+        <span asp-validation-for="Price" class="text-danger"></span> </div> 
+        <div class="col-auto align-self-end"> 
+            <button type="submit" class="btn btn-primary" formaction="/">Submit</button>
+            <button type="submit" formmethod="post" formaction="?handler=Reset" class="btn btn-secondary ms-2">Reset</button>
+        </div> 
+    </form>
+    @if(Model.Sales.Count > 0){
+    <h1>Sales</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr> <th>Remaining shares</th> <th>Cost basis sold shares</th> <th>Cost basis remaining shares</th> <th>Profit</th> <th>Created</th> </tr>
+        </thead>
+        <tbody>
+            @foreach (var sale in Model.Sales)
+            {
+                <tr><td>@sale.RemainingShares.ToString()</td> <td>@sale.CostBasisSoldShares.ToString("C")</td> <td>@sale.CostBasisRemainingShares.ToString("C")</td> <td style="color: @(sale.TotalProfit < 0 ? "red" : "black")">@sale.TotalProfit.ToString("C")</td> <td>@sale.Created</td></tr>
+            }
+        </tbody>
+    </table>
+    }
+    <h1>Available Shares Lots</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr> <th>Month</th> <th>Price</th> <th>Amount</th> <th>Total Price</th> <th>Created</th> </tr>
+        </thead>
+        <tbody>
+            @foreach (var lot in Model.AvailableLots)
+            {
+                <tr><td>@lot.Month.ToString()</td> <td>@lot.Price.ToString("C")</td> <td>@lot.Amount</td> <td>@lot.TotalPrice.ToString("C")</td> <td>@lot.Created</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "CostAccount_BAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CostAccount_DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CostAccount_BAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CostAccount_BAL.dll": {}
+        }
+      },
+      "CostAccount_DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CostAccount_DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CostAccount_DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CostAccount_BAL/1.0.0": {
+      "type": "project",
+      "path": "../CostAccount_BAL/CostAccount_BAL.csproj",
+      "msbuildProject": "../CostAccount_BAL/CostAccount_BAL.csproj"
+    },
+    "CostAccount_DAL/1.0.0": {
+      "type": "project",
+      "path": "../CostAccount_DAL/CostAccount_DAL.csproj",
+      "msbuildProject": "../CostAccount_DAL/CostAccount_DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "CostAccount_BAL >= 1.0.0",
+      "CostAccount_DAL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\aigle\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Computer Science\\Interview\\CostAccount\\CostAccount\\CostAccount.csproj",
+      "projectName": "CostAccount",
+      "projectPath": "D:\\Computer Science\\Interview\\CostAccount\\CostAccount\\CostAccount.csproj",
+      "packagesPath": "C:\\Users\\aigle\\.nuget\\packages\\",
+      "outputPath": "D:\\Computer Science\\Interview\\CostAccount\\CostAccount\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\aigle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Computer Science\\Interview\\CostAccount\\CostAccount_BAL\\CostAccount_BAL.csproj": {
+              "projectPath": "D:\\Computer Science\\Interview\\CostAccount\\CostAccount_BAL\\CostAccount_BAL.csproj"
+            },
+            "D:\\Computer Science\\Interview\\CostAccount\\CostAccount_DAL\\CostAccount_DAL.csproj": {
+              "projectPath": "D:\\Computer Science\\Interview\\CostAccount\\CostAccount_DAL\\CostAccount_DAL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

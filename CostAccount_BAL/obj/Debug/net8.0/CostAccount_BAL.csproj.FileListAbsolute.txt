@@ -1,0 +1,15 @@
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\bin\Debug\net8.0\CostAccount_BAL.deps.json
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\bin\Debug\net8.0\CostAccount_BAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\bin\Debug\net8.0\CostAccount_BAL.pdb
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\bin\Debug\net8.0\CostAccount_DAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\bin\Debug\net8.0\CostAccount_DAL.pdb
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.csproj.AssemblyReference.cache
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.AssemblyInfoInputs.cache
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.AssemblyInfo.cs
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.csproj.CoreCompileInputs.cache
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAcco.E2C42598.Up2Date
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\refint\CostAccount_BAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\CostAccount_BAL.pdb
+D:\Computer Science\Interview\CostAccount\CostAccount_BAL\obj\Debug\net8.0\ref\CostAccount_BAL.dll

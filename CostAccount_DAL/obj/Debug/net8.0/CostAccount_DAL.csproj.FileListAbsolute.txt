@@ -1,0 +1,11 @@
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\bin\Debug\net8.0\CostAccount_DAL.deps.json
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\bin\Debug\net8.0\CostAccount_DAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\bin\Debug\net8.0\CostAccount_DAL.pdb
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.AssemblyInfoInputs.cache
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.AssemblyInfo.cs
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.csproj.CoreCompileInputs.cache
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\refint\CostAccount_DAL.dll
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\CostAccount_DAL.pdb
+D:\Computer Science\Interview\CostAccount\CostAccount_DAL\obj\Debug\net8.0\ref\CostAccount_DAL.dll
